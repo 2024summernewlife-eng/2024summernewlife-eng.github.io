@@ -2,21 +2,81 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <!-- スマホで文字を適切な大きさにするための設定 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>サポート</title>
+  <style>
+    /* 全体のレイアウト */
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    /* コンテンツを中央に寄せて、最大幅を制限する */
+    .container {
+      max-width: 600px; /* タブレットなどでもこれ以上広がらない */
+      margin: 40px auto; /* 上下に余白、左右中央寄せ */
+      padding: 24px;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      color: #000;
+    }
+
+    p {
+      margin-bottom: 16px;
+      font-size: 1rem;
+    }
+
+    /* フォームへのボタンを押しやすくする */
+    .button {
+      display: inline-block;
+      background-color: #007bff; /* Material3のメインカラーに合わせるなら青系 */
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .button:active {
+      background-color: #0056b3;
+    }
+
+    .footer {
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 1px solid #eee;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
-  <h1>サポート</h1>
+  <div class="container">
+    <h1>サポート</h1>
 
-  <p>不具合の報告・改善のご要望はこちらからお願いします。</p>
+    <p>不具合の報告・改善のご要望はこちらからお願いします。</p>
 
-  <p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdITFpy6IoiPcbIERn16dQvCvbFffJzHdpu0sdsh9XXqKtZRQ/viewform?usp=publish-editor" target="_blank">
-      不具合・改善要望フォーム
-    </a>
-  </p>
+    <p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdITFpy6IoiPcbIERn16dQvCvbFffJzHdpu0sdsh9XXqKtZRQ/viewform?usp=publish-editor" target="_blank" class="button">
+        不具合・改善要望フォームを開く
+      </a>
+    </p>
 
-  <p>
-    メールでのご連絡：tm.time.timer.26@gmail.com
-  </p>
+    <div class="footer">
+      <p>メールでのご連絡：<br>
+      <strong>〇〇〇@gmail.com</strong></p>
+    </div>
+  </div>
 </body>
 </html>
